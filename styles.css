@@ -1,0 +1,77 @@
+/* Aplicar customização de layout a toda aplicação */
+/* No React por padrão é um por componente */
+/* Podemos aplicar em toda o APP, por tag, por id ou classe */
+/* Posso aplicar em componntes internos */
+/* Resete da página */
+*{
+    /* Espaçameto externo */
+    margin: 0;
+    /* Espaçamento interno */
+    padding: 0;
+    /* Tamanho da caixa */
+    box-sizing: 0;
+}
+
+/* Header */
+/* Por classe */
+.cabecalho{
+    /* ocupar o espaço de  */
+    width: 100%;
+    /* Fundo da tela */
+    background: #ffffff;
+    /* Borda */
+    border-bottom: 1px solid #9cc4e9;
+    /* Manter o header no início da página */
+    position: sticky;
+    /* Encostar no topo */
+    top: 0;
+    /* Sobreposição */
+    z-index: 1000;
+}
+
+.cabecalho-conteudo{
+    /* Altura minima */
+    min-height: 72px;
+    /* Ativa o Flexbox */
+    display: flex;
+    /* Centraliza os elementos verticalmente */
+    align-items: center;
+    /* Cpçpca espaço entre elementos */
+    justify-content: space-between;
+    /* Define os espaços entre os elementos */
+    gap: 30px;
+}
+
+.logo {
+    /* Define a cor do texto do logo */
+    color: #435680;
+    /* Define o tamanho da fonte */
+    font-size: 24px;
+    /* Deixar texto em negrito */
+    font-weight: bold;
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+}
+
+.menu{
+    /* Ativa o Flexbox */
+    display: flex;
+    /* Centraliza os itens verticalmente */
+    align-items: center;
+    /* Define o espaço entre os links do menu */
+    gap: 28px;
+}
+
+.menu a{
+    /* Define a cor padrão dos links */
+    color: #333333;
+    /* Define o tamanho da fonte */
+    font-size: 16px;
+    /* Define uma fonte mais grossa (forte) */
+    font-weight: 600;
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+    /* Faz as mudanças acontecerem de forma suave */
+    transition: 0.3s;
+    
+}

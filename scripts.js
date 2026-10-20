@@ -5,11 +5,12 @@ async function componente(
     destino  
 ) {
     const elemento = 
-        document.querySelector(destino)
+        document.querySelector(destino);
 
     if (!elemento) {
         return;
     }
+    
     const resposta =
         await fetch(arquivo);
 
