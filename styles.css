@@ -169,42 +169,41 @@
 }
 
 /* Beneficios */
-.beneficios{
+.beneficios {
     padding: 100px;
-    background: #ffffff;
+    background: #cacaca;
 }
-.titulo-secao{
+.titulo-secao {
     text-align: center;
     max-width: 700px;
     margin: 0 auto 50px;
 }
 
-.titulo-destaque{
+.titulo-destaque {
     color: #2563eb;
     /* Negrito */
     font-weight: bold;
     font-size: 16px;
 }
 
-.titulo-secao h2{
+.titulo-secao h2 {
     font-size: 38px;
     color: #111827;
     margin-top: 10px;
     margin-bottom: 15px;
 }
-.titulo-secao p{
+.titulo-secao p {
     font-size: 18px;
     color: #666666;
 }
-.grade-beneficios{
-    /* Ativa o Grid */
+.grade-beneficios {
     display: grid;
     /* Cria 3 colunas com os mesmo tamanho */
     grid-template-columns: repeat(3, 1fr);
     /* Espaço */
     gap: 30px;
 }
-.card-beneficio{
+.card-beneficios {
     background: #ffffff;
     padding: 35px;
     border: 1px solid #e5e7eb;
@@ -212,22 +211,22 @@
     text-align: center;
     transition: 0.3s;
 }
-.card-beneficio:hover{
+.card-beneficios {
     /* Move o elemento para cima */
     transform: translate(-8px);
     /* Cria uma sombra */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
-.card-icone{
+.card-icone {
     font-size: 42px;
     margin-bottom: 20px;
 }
-.card-beneficio h3{
+.card-beneficios h3 {
     font-size: 22px;
     color: #111827;
     margin-bottom: 12px;
 }
-.card-beneficio p{
+.card-beneficios p {
     color: #666666;
     font-size: 16px;
     line-height: 1.6;
