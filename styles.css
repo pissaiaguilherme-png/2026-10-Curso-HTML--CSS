@@ -18,9 +18,9 @@
     /* ocupar o espaço de  */
     width: 100%;
     /* Fundo da tela */
-    background: #ffffff;
+    background: #c7bdbc;
     /* Borda */
-    border-bottom: 1px solid #9cc4e9;
+    border-bottom: 1px solid #222324;
     /* Manter o header no início da página */
     position: sticky;
     /* Encostar no topo */
@@ -44,7 +44,7 @@
 
 .logo {
     /* Define a cor do texto do logo */
-    color: #435680;
+    color: #0a0a0a;
     /* Define o tamanho da fonte */
     font-size: 24px;
     /* Deixar texto em negrito */
@@ -64,7 +64,7 @@
 
 .menu a{
     /* Define a cor padrão dos links */
-    color: #333333;
+    color: #000000;
     /* Define o tamanho da fonte */
     font-size: 16px;
     /* Define uma fonte mais grossa (forte) */
@@ -73,5 +73,97 @@
     text-decoration: none;
     /* Faz as mudanças acontecerem de forma suave */
     transition: 0.3s;
-    
+}
+/* Quando passar o mouse em cima do menu*/
+.menu a:hover{
+    /* Alterar a cor */
+    color: #13273b;
+}
+
+/* Hero */
+.hero{
+    /* Margem interna */
+    padding: 100px;
+    background: #8A4137;
+}
+
+.hero-conteudo {
+    /* Flexbox */
+    /* grid, block, inline */
+    display: flex;
+    /* Centralizados, a esquerda, a direita */
+    align-items: center;
+    /* Espaço itens */
+    justify-content: space-between;
+    /* Espaçamento entre os blocos */
+    gap: 60px;
+
+}
+
+/* Ajuste da largura do hero */
+.container{
+    /* Ocupar: largura disponível */
+    width: 90%;
+    /* Limitar tamanho máximo */
+    max-width: 1200px;
+    /* Centralizar Horizontalmente */
+    margin: 0 auto;
+}
+
+.hero-texto{
+    /* Permitir que o elemento expanda */
+    flex: 1;
+}
+
+.hero-destaque{
+    /* Cor */
+    color: #0f0f0f;
+    /* Fonte em negrito b, ou usar o font-weight */
+    font-weight: bold;
+    /* Define o tamanho */
+    font-size: 16px;
+}
+
+.hero-texto h1{
+    font-size: 52px;
+    /* Espaço entre linhas */
+    line-height: 1.1;
+    /* Margem superior */
+    margin-top: 15px;
+    /* Margem inferior */
+    margin-bottom: 20px;
+    color: #07080a;
+}
+
+.hero-texto p{
+    font-size: 36px;
+    color: #0f0f0f;
+    margin-bottom: 30px;
+    max-width: 550px;
+}
+
+.botao-hero{
+    display: inline-block;
+    padding: 14px 28px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    /* Arredondamento dos cantos */
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.botao-hero:hover{
+    background: #13273b;
+    transform: translateY(-2px);
+}
+
+/* Imagem */
+.hero-imagem{
+    flex: 1;
+}
+.hero-imagem img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }

@@ -1,0 +1,12 @@
+/* Variaveis do projeto */
+:root{
+--cor-primaria: #007bff;
+--cor-secundaria: #333333;
+--cor-fundo: #ffffff;
+--tamanho-fonte: 20px;
+--espacamento: 20px;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
