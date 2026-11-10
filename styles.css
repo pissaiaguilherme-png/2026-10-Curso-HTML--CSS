@@ -171,7 +171,7 @@
 /* Beneficios */
 .beneficios {
     padding: 100px;
-    background: #cacaca;
+    background: #c7bdbc;
 }
 .titulo-secao {
     text-align: center;
@@ -227,7 +227,61 @@
     margin-bottom: 12px;
 }
 .card-beneficios p {
-    color: #666666;
+    color: #0a0a0a;
     font-size: 16px;
     line-height: 1.6;
+}
+
+/* Sobre */
+.sobre{
+    padding: 100px;
+    background: #f5f7f6;
+}
+.sobre-conteudo{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.sobre-imagem{
+    flex: 1;
+}
+.sobre-imagem img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+.sobre-texto{
+    flex: 1;
+}
+.sobre-destaque{
+    color: #2563eb;
+    font-weight: bold;
+    font-size: 16px;
+}
+.sobre-texto h2{
+    font-size: 40px;
+    line-height: 1.2;
+    color: #111827;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.sobre-texto{
+    color: #050505;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+.botao-sobre{
+    display: inline-block;
+    padding: 14px;
+    background: #020202;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.botao-sobre:hover{
+    background: #1d3ed8;
+    transform: translateY(2px);
 }
