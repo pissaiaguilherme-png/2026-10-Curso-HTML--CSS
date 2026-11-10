@@ -9,7 +9,7 @@
     /* Espaçamento interno */
     padding: 0;
     /* Tamanho da caixa */
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 /* Header */
@@ -284,4 +284,29 @@
 .botao-sobre:hover{
     background: #1d3ed8;
     transform: translateY(2px);
+}
+.cta, .contato {
+    padding: 80px;
+    background: #c7bdbc;
+}
+.titulo-servicos{
+    /* clamp(minimo, preferido, maximo) - responsividade - 
+    ivw equivale a 1% da largura */
+    font-size: clamp(18px, 4vw, 40px);
+    margin: 10px 0 20px;
+    line-height: 1.2;
+}
+.container-cta {
+    text-align: center;
+    gap: 20px;
+}
+.container-cta h2 {
+    font-size: 50px;
+    color: #111827;
+    margin-bottom: 20px;
+}
+.container-cta p {
+    max-width: 650px;
+    margin: 0 auto 28px;
+    color: #000000;
 }
