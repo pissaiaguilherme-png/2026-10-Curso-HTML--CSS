@@ -211,9 +211,9 @@
     text-align: center;
     transition: 0.3s;
 }
-.card-beneficios {
+.card-beneficios:hover {
     /* Move o elemento para cima */
-    transform: translate(-8px);
+    transform: translateY(-8px);
     /* Cria uma sombra */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
