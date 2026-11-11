@@ -1,22 +1,19 @@
-console.log("Olá mundo! Meu nome é Guilherme")
-
-async function componente(
-    arquivo,
-    destino  
-) {
-    const elemento = 
-        document.querySelector(destino);
-
+async function componente(arquivo, destino) {
+    const elemento = document.querySelector(destino);
     if (!elemento) {
-        return;
+        throw new Error(`Destino "${destino}" não encontrado para o componente "${arquivo}".`);
     }
-    
-    const resposta =
-        await fetch(arquivo);
 
-    const html =
-        await resposta.text();
+    elemento.setAttribute("aria-busy", "true");
 
-    elemento.innerHTML =
-        html;
+    try {
+        const resposta = await fetch(arquivo);
+        if (!resposta.ok) {
+            throw new Error(`Falha ao carregar "${arquivo}": HTTP ${resposta.status}.`);
+        }
+
+        elemento.innerHTML = await resposta.text();
+    } finally {
+        elemento.setAttribute("aria-busy", "false");
+    }
 }
